@@ -20,7 +20,7 @@ pipeline {
                     rmdir /s /q target
                     mkdir target
                     echo Creating WAR file
-                    jar -cvf target/quizApp.war *
+                    jar -cvf target/DevCalci.war *
                 '''
             }
         }
@@ -35,7 +35,7 @@ pipeline {
                             path: '', 
                             url: 'http://localhost:8090/'
                         )
-                    ], contextPath: '', war: 'target/quizApp.war'
+                    ], contextPath: '', war: 'target/DevCalci.war'
                 }
             }
         }
